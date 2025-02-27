@@ -31,11 +31,16 @@ namespace login
 
             if (usuario == null || usuario == "")
             {
-             labelResultado.Text = "Login Obrigatório!";
-                labelResultado.ForeColor = Color.Black;
+             labelResultado.Text = "Login Obrigatorio!";
+                labelResultado.ForeColor = Color.DarkRed;
 
             }
-           else if (usuario == "Wilder.Santos" && senha == "12345")
+           else if (senha == null || senha == "")
+            {
+                labelResultado.Text = "Senha Obrigatorio!";
+                labelResultado.ForeColor = Color.Red;
+            }
+            else if (usuario == "Wilder.Santos" && senha == "12345")
             {
                 labelResultado.Text = "Autenticado com sucesso!";
                 labelResultado.ForeColor = Color.Green;

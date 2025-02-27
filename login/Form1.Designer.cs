@@ -42,18 +42,20 @@
             // 
             // buttonEnter
             // 
-            buttonEnter.Location = new Point(230, 228);
+            buttonEnter.BackColor = SystemColors.Info;
+            buttonEnter.Location = new Point(143, 126);
             buttonEnter.Name = "buttonEnter";
             buttonEnter.Size = new Size(56, 22);
             buttonEnter.TabIndex = 2;
             buttonEnter.Text = "Entrar";
-            buttonEnter.UseVisualStyleBackColor = true;
+            buttonEnter.UseVisualStyleBackColor = false;
             buttonEnter.Click += buttonEnter_Click;
             // 
             // textBoxUsuário
             // 
             textBoxUsuário.AutoSize = true;
-            textBoxUsuário.Location = new Point(139, 174);
+            textBoxUsuário.BackColor = SystemColors.Info;
+            textBoxUsuário.Location = new Point(64, 72);
             textBoxUsuário.Name = "textBoxUsuário";
             textBoxUsuário.Size = new Size(37, 15);
             textBoxUsuário.TabIndex = 3;
@@ -62,7 +64,8 @@
             // textBoxSenha
             // 
             textBoxSenha.AutoSize = true;
-            textBoxSenha.Location = new Point(139, 200);
+            textBoxSenha.BackColor = SystemColors.Info;
+            textBoxSenha.Location = new Point(62, 96);
             textBoxSenha.Name = "textBoxSenha";
             textBoxSenha.Size = new Size(39, 15);
             textBoxSenha.TabIndex = 4;
@@ -71,19 +74,21 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(182, 125);
+            label3.BackColor = SystemColors.Info;
+            label3.Font = new Font("Snap ITC", 18F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label3.Location = new Point(12, 9);
             label3.Name = "label3";
-            label3.Size = new Size(247, 32);
+            label3.Size = new Size(315, 31);
             label3.TabIndex = 5;
             label3.Text = "Tropa do menino Ney";
             // 
             // labelResultado
             // 
             labelResultado.AutoSize = true;
-            labelResultado.Location = new Point(477, 142);
+            labelResultado.Font = new Font("Showcard Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelResultado.Location = new Point(40, 182);
             labelResultado.Name = "labelResultado";
-            labelResultado.Size = new Size(0, 15);
+            labelResultado.Size = new Size(0, 27);
             labelResultado.TabIndex = 6;
             // 
             // label1
@@ -112,14 +117,16 @@
             // 
             // textBoxlogin
             // 
-            textBoxlogin.Location = new Point(182, 171);
+            textBoxlogin.BackColor = SystemColors.Info;
+            textBoxlogin.Location = new Point(107, 64);
             textBoxlogin.Name = "textBoxlogin";
             textBoxlogin.Size = new Size(132, 23);
             textBoxlogin.TabIndex = 15;
             // 
             // textsenhabox
             // 
-            textsenhabox.Location = new Point(182, 199);
+            textsenhabox.BackColor = SystemColors.Info;
+            textsenhabox.Location = new Point(107, 93);
             textsenhabox.Name = "textsenhabox";
             textsenhabox.Size = new Size(132, 23);
             textsenhabox.TabIndex = 16;
