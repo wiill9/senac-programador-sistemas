@@ -4,11 +4,13 @@ namespace login
 {
     public partial class formlogin : Form
     {
+        List<string> listausuarios = new List<string>() { "neymar.jr", " pablo.vittar", "sukuna.silva" };
+
         public formlogin()
         {
             InitializeComponent();
         }
-
+      
         private void formlogin_Load(object sender, EventArgs e)
         {
 
@@ -26,10 +28,10 @@ namespace login
 
         private void buttonEnter_Click(object sender, EventArgs e)
         {
-            string usuario = textBoxlogin.Text;
+            string usuarioBuscado = textBoxlogin.Text;
             string senha = textsenhabox.Text;
 
-            if (usuario == null || usuario == "")
+            if (string.IsNullOrWhiteSpace(usuarioBuscado))
             {
              labelResultado.Text = "Login Obrigatorio!";
                 labelResultado.ForeColor = Color.DarkRed;
@@ -40,7 +42,17 @@ namespace login
                 labelResultado.Text = "Senha Obrigatorio!";
                 labelResultado.ForeColor = Color.Red;
             }
-            else if (usuario == "Wilder.Santos" && senha == "12345")
+            string usuarioEncontrado;
+             
+
+        for (int i = 0; i < listausuarios.Count; i++)
+           if (usuarioBuscado == listausuarios[i])
+
+            {
+                    usuarioEncontrado = listausuarios[i];
+            }
+           
+            if (usuarioBuscado == "usuarioEncontrado" && senha == "12345")
             {
                 labelResultado.Text = "Autenticado com sucesso!";
                 labelResultado.ForeColor = Color.Green;
@@ -62,6 +74,19 @@ namespace login
         private void treeView2_AfterSelect_1(object sender, TreeViewEventArgs e)
         {
 
+        }
+    }
+
+    internal record struct NewStruct(object Item1, object Item2)
+    {
+        public static implicit operator (object, object)(NewStruct value)
+        {
+            return (value.Item1, value.Item2);
+        }
+
+        public static implicit operator NewStruct((object, object) value)
+        {
+            return new NewStruct(value.Item1, value.Item2);
         }
     }
 }
