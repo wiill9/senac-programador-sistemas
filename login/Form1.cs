@@ -10,7 +10,7 @@ namespace login
         {
             InitializeComponent();
         }
-      
+
         private void formlogin_Load(object sender, EventArgs e)
         {
 
@@ -33,26 +33,25 @@ namespace login
 
             if (string.IsNullOrWhiteSpace(usuarioBuscado))
             {
-             labelResultado.Text = "Login Obrigatorio!";
+                labelResultado.Text = "Login Obrigatorio!";
                 labelResultado.ForeColor = Color.DarkRed;
 
             }
-           else if (senha == null || senha == "")
+            else if (senha == null || senha == "")
             {
                 labelResultado.Text = "Senha Obrigatorio!";
                 labelResultado.ForeColor = Color.Red;
             }
-            string usuarioEncontrado;
-             
+            
+            int usuarioEncontrado = -1;
 
-        for (int i = 0; i < listausuarios.Count; i++)
-           if (usuarioBuscado == listausuarios[i])
+            for (int i = 0; i < listausuarios.Count; i++)
+                if (usuarioBuscado == listausuarios[i])
+                {
+                    usuarioEncontrado = i;
+                }
 
-            {
-                    usuarioEncontrado = listausuarios[i];
-            }
-           
-            if (usuarioBuscado == "usuarioEncontrado" && senha == "12345")
+            if (usuarioEncontrado > -1 && senha == "12345")
             {
                 labelResultado.Text = "Autenticado com sucesso!";
                 labelResultado.ForeColor = Color.Green;
@@ -73,6 +72,35 @@ namespace login
 
         private void treeView2_AfterSelect_1(object sender, TreeViewEventArgs e)
         {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string usuario = textBoxnovomembrojr.Text;
+            string senha = textBoxnovasenha.Text;
+
+            if (string.IsNullOrWhiteSpace(usuario))
+            {
+                labelResultado.Text = "Usuario Obrigatorio!";
+                labelResultado.ForeColor = Color.DarkRed;
+
+            }
+            else if (senha == null || senha == "")
+            {
+                labelResultado.Text = "Senha Obrigatorio!";
+                labelResultado.ForeColor = Color.Red;
+            }
 
         }
     }
