@@ -1,4 +1,5 @@
-﻿namespace login
+﻿
+namespace login
 {
     partial class formlogin
     {
@@ -44,6 +45,8 @@
             buttoncd = new Button();
             button1 = new Button();
             button2 = new Button();
+            labelneymarjrnovo = new Label();
+            labelneymarjunior = new Label();
             SuspendLayout();
             // 
             // buttonEnter
@@ -104,7 +107,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(495, 133);
+            label1.Location = new Point(714, 167);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
             label1.TabIndex = 7;
@@ -160,6 +163,7 @@
             textBoxnovomembrojr.Name = "textBoxnovomembrojr";
             textBoxnovomembrojr.Size = new Size(123, 23);
             textBoxnovomembrojr.TabIndex = 20;
+            textBoxnovomembrojr.TextChanged += TextBoxnovomembrojr_TextChanged;
             // 
             // textBoxnovasenha
             // 
@@ -168,6 +172,7 @@
             textBoxnovasenha.Name = "textBoxnovasenha";
             textBoxnovasenha.Size = new Size(123, 23);
             textBoxnovasenha.TabIndex = 22;
+            textBoxnovasenha.TextChanged += textBoxnovasenha_TextChanged;
             // 
             // buttoncd
             // 
@@ -205,6 +210,24 @@
             button2.Text = "Senha ";
             button2.UseVisualStyleBackColor = false;
             // 
+            // labelneymarjrnovo
+            // 
+            labelneymarjrnovo.AutoSize = true;
+            labelneymarjrnovo.Font = new Font("Elephant", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelneymarjrnovo.ForeColor = SystemColors.Highlight;
+            labelneymarjrnovo.Location = new Point(578, 186);
+            labelneymarjrnovo.Name = "labelneymarjrnovo";
+            labelneymarjrnovo.Size = new Size(0, 25);
+            labelneymarjrnovo.TabIndex = 28;
+            // 
+            // labelneymarjunior
+            // 
+            labelneymarjunior.AutoSize = true;
+            labelneymarjunior.Location = new Point(758, 167);
+            labelneymarjunior.Name = "labelneymarjunior";
+            labelneymarjunior.Size = new Size(0, 15);
+            labelneymarjunior.TabIndex = 29;
+            // 
             // formlogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -212,6 +235,8 @@
             BackColor = SystemColors.HighlightText;
             BackgroundImage = Properties.Resources.neymar_brazil_2022_1668947300_97010;
             ClientSize = new Size(923, 557);
+            Controls.Add(labelneymarjunior);
+            Controls.Add(labelneymarjrnovo);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(buttoncd);
@@ -258,5 +283,7 @@
         private TextBox novasenhajr;
         private Button button1;
         private Button button2;
+        private Label labelneymarjrnovo;
+        private Label labelneymarjunior;
     }
 }

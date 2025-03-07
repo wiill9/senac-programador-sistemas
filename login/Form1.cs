@@ -4,7 +4,10 @@ namespace login
 {
     public partial class formlogin : Form
     {
-        List<string> listausuarios = new List<string>() { "neymar.jr", " pablo.vittar", "sukuna.silva" };
+        List<string> listausuarios = new List<string>() { "neymar.jr", "pablo.vittar", "sukuna.silva" };
+        List<string> listasenha = new List<string>() { "bruna", "12345", "777" };
+        
+        
 
         public formlogin()
         {
@@ -42,7 +45,7 @@ namespace login
                 labelResultado.Text = "Senha Obrigatorio!";
                 labelResultado.ForeColor = Color.Red;
             }
-            
+
             int usuarioEncontrado = -1;
 
             for (int i = 0; i < listausuarios.Count; i++)
@@ -64,6 +67,7 @@ namespace login
 
 
         }
+        
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -89,32 +93,63 @@ namespace login
         {
             string usuario = textBoxnovomembrojr.Text;
             string senha = textBoxnovasenha.Text;
+           
 
-            if (string.IsNullOrWhiteSpace(usuario))
+                bool usuarioencontrado = false;
+            for (int i = 0; i < listausuarios.Count; i++)
             {
-                labelResultado.Text = "Usuario Obrigatorio!";
-                labelResultado.ForeColor = Color.DarkRed;
-
-            }
-            else if (senha == null || senha == "")
-            {
-                labelResultado.Text = "Senha Obrigatorio!";
-                labelResultado.ForeColor = Color.Red;
+                if (usuario == listausuarios[i])
+                {
+                    usuarioencontrado = true;
+                }
             }
 
-        }
-    }
+            if (!usuarioencontrado)
+            {
 
-    internal record struct NewStruct(object Item1, object Item2)
-    {
-        public static implicit operator (object, object)(NewStruct value)
-        {
-            return (value.Item1, value.Item2);
+                listausuarios.Add(usuario);
+                listasenha.Add(senha);
+                labelneymarjrnovo.Text = "usuario cadrastado com sucesso!";
+            }
+            else
+            {
+                labelneymarjrnovo.Text = "O usuario ja existe!";
+            }
+
+
+
+
+
+
+
         }
 
-        public static implicit operator NewStruct((object, object) value)
+        
+
+
+        private void textBoxnovasenha_TextChanged(object sender, EventArgs e)
         {
-            return new NewStruct(value.Item1, value.Item2);
+
         }
+
+        internal record struct NewStruct(object Item1, object Item2)
+        {
+            public static implicit operator (object, object)(NewStruct value)
+            {
+                return (value.Item1, value.Item2);
+            }
+
+            public static implicit operator NewStruct((object, object) value)
+            {
+                return new NewStruct(value.Item1, value.Item2);
+            }
+        }
+
+        private void TextBoxnovomembrojr_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
     }
 }
