@@ -2,16 +2,24 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace login
 {
-    public partial class formlogin : Form
+    public partial class Formlogin : Form
     {
+        List<string> alfabetoMaiusculo = new List<string>() { "A", "B", "C", "D", "E" };
+        List<string> alfabetoMinusculo = new List<string>() { "a", "b", "c", "d", "e" };
+        List<char> numeros = new List<char>() { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+        List<char> especiais = new List<char>() { '!', '@', '#', '$', '%', '&', '*' };
+
+
+
         List<string> listausuarios = new List<string>() { "neymar.jr", "pablo.vittar", "sukuna.silva" };
         List<string> listasenha = new List<string>() { "bruna", "12345", "777" };
         
         
 
-        public formlogin()
+        public Formlogin()
         {
             InitializeComponent();
+             
         }
 
         private void formlogin_Load(object sender, EventArgs e)
@@ -34,18 +42,6 @@ namespace login
             string usuarioBuscado = textBoxlogin.Text;
             string senha = textsenhabox.Text;
 
-            if (string.IsNullOrWhiteSpace(usuarioBuscado))
-            {
-                labelResultado.Text = "Login Obrigatorio!";
-                labelResultado.ForeColor = Color.DarkRed;
-
-            }
-            else if (senha == null || senha == "")
-            {
-                labelResultado.Text = "Senha Obrigatorio!";
-                labelResultado.ForeColor = Color.Red;
-            }
-
             int usuarioEncontrado = -1;
 
             for (int i = 0; i < listausuarios.Count; i++)
@@ -64,7 +60,17 @@ namespace login
                 labelResultado.Text = "usuario e senha incorretos";
                 labelResultado.ForeColor = Color.Red;
             }
+            if (string.IsNullOrWhiteSpace(usuarioBuscado))
+            {
+                labelResultado.Text = "Login Obrigatorio!";
+                labelResultado.ForeColor = Color.DarkRed;
 
+            }
+            else if (senha == null || senha == "")
+            {
+                labelResultado.Text = "Senha Obrigatorio!";
+                labelResultado.ForeColor = Color.Red;
+            }
 
         }
         
@@ -98,6 +104,42 @@ namespace login
                 bool usuarioencontrado = false;
             for (int i = 0; i < listausuarios.Count; i++)
             {
+                if (string.IsNullOrWhiteSpace(usuario))
+                {
+                    labelneymarjrnovo.Text = "Usuario eh obrigatório!!!";
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(senha))
+                {
+                   labelResultado.Text = "Senha eh obrigatoria!!!";
+                    return;
+                }
+                if (senha.Length < 8)
+                {
+                    labelneymarjrnovo.Text = "A senha deve ter pelo menos 8 caracteres";
+                    return;
+                }
+                if (!senha.Any(char.IsUpper))
+                {
+                    labelneymarjrnovo.Text = "A senha deve ter pelo menos uma letra maiuscula";
+                    return;
+                }
+                if (!senha.Any(char.IsLower))
+                {
+                    labelneymarjrnovo.Text = "A senha deve ter pelo menos uma letra minuscula";
+                    return;
+                }
+                if (!senha.Any(char.IsDigit))
+                {
+                    labelneymarjrnovo.Text = "A senha deve ter pelo menos um numero";
+                    return;
+                }
+                if (!senha.Any(char.IsPunctuation))
+                {
+                    labelneymarjrnovo.Text = "A senha deve ter pelo menos um caracter especial";
+                    return;
+                }
+
                 if (usuario == listausuarios[i])
                 {
                     usuarioencontrado = true;
