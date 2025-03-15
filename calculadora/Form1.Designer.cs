@@ -47,11 +47,12 @@
             buttonDivisão = new Button();
             buttonClear = new Button();
             label1 = new Label();
+            buttongeometrico = new Button();
             SuspendLayout();
             // 
             // textresultado
             // 
-            textresultado.Location = new Point(13, 35);
+            textresultado.Location = new Point(12, 28);
             textresultado.Name = "textresultado";
             textresultado.ReadOnly = true;
             textresultado.Size = new Size(205, 23);
@@ -219,7 +220,7 @@
             // 
             // buttonClear
             // 
-            buttonClear.Location = new Point(224, 12);
+            buttonClear.Location = new Point(224, 47);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(47, 46);
             buttonClear.TabIndex = 18;
@@ -235,11 +236,22 @@
             label1.Size = new Size(0, 15);
             label1.TabIndex = 19;
             // 
+            // buttongeometrico
+            // 
+            buttongeometrico.Location = new Point(12, 62);
+            buttongeometrico.Name = "buttongeometrico";
+            buttongeometrico.Size = new Size(92, 31);
+            buttongeometrico.TabIndex = 20;
+            buttongeometrico.Text = "Geometria ";
+            buttongeometrico.UseVisualStyleBackColor = true;
+            buttongeometrico.Click += buttongeometrico_Click;
+            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(290, 378);
+            Controls.Add(buttongeometrico);
             Controls.Add(label1);
             Controls.Add(buttonClear);
             Controls.Add(buttonDivisão);
@@ -287,5 +299,6 @@
         private Button buttonDivisão;
         private Button buttonClear;
         private Label label1;
+        private Button buttongeometrico;
     }
 }

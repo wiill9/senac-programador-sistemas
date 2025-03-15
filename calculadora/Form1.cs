@@ -135,6 +135,13 @@ namespace calculadora
         {
             textresultado.Text = " ";
         }
+
+        private void buttongeometrico_Click(object sender, EventArgs e)
+        {
+            Form2 novoform = new Form2();
+            novoform.Show();
+            this.Hide();
+        }
     }
-    
+
 }

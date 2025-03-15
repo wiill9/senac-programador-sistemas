@@ -14,3 +14,4 @@ C:\Users\wilder.rsantos\source\repos\calculadora\obj\Debug\net8.0-windows\calcul
 C:\Users\wilder.rsantos\source\repos\calculadora\obj\Debug\net8.0-windows\calculadora.genruntimeconfig.cache
 C:\Users\wilder.rsantos\source\repos\calculadora\obj\Debug\net8.0-windows\ref\calculadora.dll
 C:\Users\wilder.rsantos\source\repos\calculadora\obj\Debug\net8.0-windows\calculadora.Calculadora.resources
+C:\Users\wilder.rsantos\source\repos\calculadora\obj\Debug\net8.0-windows\calculadora.Form2.resources
