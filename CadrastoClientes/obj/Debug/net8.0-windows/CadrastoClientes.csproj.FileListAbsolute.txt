@@ -1,0 +1,6 @@
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.Form1.resources
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.csproj.GenerateResource.cache
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.AssemblyInfoInputs.cache
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.AssemblyInfo.cs
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.csproj.CoreCompileInputs.cache
