@@ -4,8 +4,8 @@
     {
         public static void main()
         {
-            List<Cliente> listacliente = new List<Cliente>();
-            listacliente.Add(new Cliente
+            List<Cliente> listaCliente = new List<Cliente>();
+            listaCliente.Add(new Cliente
             {
                 Id = 1,
                 Nome = "Neymar Junior",
@@ -13,18 +13,38 @@
                 Email = "neymar.jr@email.com",
                 NomeSocial = "Ney jr",
                 datadenascimento = "05/02/1992",
-                EnderecoCliente = new EnderecoCliente { logradouro = "endereco do neymar", Numero = "11", Complemento = "Apartamento", Bairro = "Centro", Municipio = "São Paulo", Estado = "SP", Cep = "01234-567"},
-
-
-
-
-
-
-
-
-
-
+                EnderecoCliente = new EnderecoCliente { logradouro = "endereco do neymar", Numero = "11", Complemento = "Apartamento", Bairro = "Centro", Municipio = "São Paulo", Estado = "SP", Cep = "01234-567" },
+                Tipo = TipoCliente.PF,
+                Etnia = EtniaCliente.branco,
+                generocliente = GeneroCliente.masculino,
             });
+            listaCliente.Add(new Cliente
+            {
+                Id = 2,
+                Nome = "Yuri Alberto",
+                telefone = "(11) 98765-0124",
+                Email = "yurialberto@email.com",
+                NomeSocial = "alberto",
+                datadenascimento = "18/03/2001",
+                EnderecoCliente = new EnderecoCliente { logradouro = "endereco do yuri", Numero = "9", Complemento = "Apartamento", Bairro = "itaquera", Municipio = "São Paulo", Estado = "SP", Cep = "08965-567" },
+                Tipo = TipoCliente.PF,
+                Etnia = EtniaCliente.branco,
+                generocliente = GeneroCliente.masculino,
+            });
+            listaCliente.Add(new Cliente
+            {
+                Id = 3,
+                Nome = "Thais Ribeiro",
+                telefone = "(11) 91235-0124",
+                Email = "thaisribeiro@email.com",
+                NomeSocial = "ribeiro",
+                datadenascimento = "30/10/1990",
+                EnderecoCliente = new EnderecoCliente { logradouro = "jd santo amaro", Numero = "98", Complemento = "Casa", Bairro = "Cohab", Municipio = "São Paulo", Estado = "SP", Cep = "05456-567" },
+                Tipo = TipoCliente.PF,
+                Etnia = EtniaCliente.branco,
+                generocliente = GeneroCliente.feminino,
+            });
+
 
         }
         public Form1()
@@ -40,28 +60,32 @@
 
         private void buttoncadastro_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(textboxID.Text);
-            string nome = textboxName.Text;
-            string datadenascimemto = datadenascimento.Text;
-            string telefone = textboxtelefone.Text;
-            string email = textBoxemail.Text;
-            string nomesocial = textBoxnomesocial.Text;
-            string genero = comboBoxGenero.SelectedText.ToString();
-            string etnia = combobox01.SelectedText.ToString();
-            bool estrangeiro = cheeckEstrangeiro.Checked;
-            string endereco = textBoxendereco.Text;
-            string logradouro = textBoxlogradouro.Text;
-            string bairro = textBoxbairro.Text;
-            string municipio = textboxmunicipio.Text;
-            string estado = textBoxEstado.Text;
-            string numero = textboxnumero.Text;
+            try
+            {
+                Cliente listacliente = new Cliente();
+                (
+                   textboxID.Text,
+                   textboxName.Text,
+                   datadenascimento.Text,
+                   textboxtelefone.Text,
+                   textBoxemail.Text,
+                   textBoxnomesocial.Text,
+                   comboBoxGenero.Text,
+                   combobox01.Text,
+                   textBoxendereco.Text,
+                   textBoxlogradouro.Text,
+                   textBoxbairro.Text,
+                   textboxmunicipio.Text,
+                   textBoxEstado.Text,
+                   textboxnumero.Text,
+                   cheeckEstrangeiro.Checked,
+               );
 
-
-
-            Labelresultado.Text = "Cliente Cadrastado com sucesso!";
-
+            }
 
         }
+
+
 
         private void label9_Click(object sender, EventArgs e)
         {

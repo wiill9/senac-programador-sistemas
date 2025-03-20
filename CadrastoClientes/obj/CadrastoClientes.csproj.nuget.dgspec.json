@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wilder.rsantos\\source\\repos\\CadrastoClientes\\CadrastoClientes.csproj": {}
+    "C:\\Users\\wilder.rsantos\\repositorio\\senac-programador-sistemas\\CadrastoClientes\\CadrastoClientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wilder.rsantos\\source\\repos\\CadrastoClientes\\CadrastoClientes.csproj": {
+    "C:\\Users\\wilder.rsantos\\repositorio\\senac-programador-sistemas\\CadrastoClientes\\CadrastoClientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wilder.rsantos\\source\\repos\\CadrastoClientes\\CadrastoClientes.csproj",
+        "projectUniqueName": "C:\\Users\\wilder.rsantos\\repositorio\\senac-programador-sistemas\\CadrastoClientes\\CadrastoClientes.csproj",
         "projectName": "CadrastoClientes",
-        "projectPath": "C:\\Users\\wilder.rsantos\\source\\repos\\CadrastoClientes\\CadrastoClientes.csproj",
+        "projectPath": "C:\\Users\\wilder.rsantos\\repositorio\\senac-programador-sistemas\\CadrastoClientes\\CadrastoClientes.csproj",
         "packagesPath": "C:\\Users\\wilder.rsantos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wilder.rsantos\\source\\repos\\CadrastoClientes\\obj\\",
+        "outputPath": "C:\\Users\\wilder.rsantos\\repositorio\\senac-programador-sistemas\\CadrastoClientes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
