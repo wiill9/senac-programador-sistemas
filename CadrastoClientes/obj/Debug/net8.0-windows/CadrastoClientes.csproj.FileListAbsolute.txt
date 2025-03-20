@@ -4,3 +4,13 @@ C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\C
 C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.AssemblyInfoInputs.cache
 C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.AssemblyInfo.cs
 C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.csproj.CoreCompileInputs.cache
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\bin\Debug\net8.0-windows\CadrastoClientes.exe
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\bin\Debug\net8.0-windows\CadrastoClientes.deps.json
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\bin\Debug\net8.0-windows\CadrastoClientes.runtimeconfig.json
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\bin\Debug\net8.0-windows\CadrastoClientes.dll
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\bin\Debug\net8.0-windows\CadrastoClientes.pdb
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.dll
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\refint\CadrastoClientes.dll
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.pdb
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\CadrastoClientes.genruntimeconfig.cache
+C:\Users\wilder.rsantos\source\repos\CadrastoClientes\obj\Debug\net8.0-windows\ref\CadrastoClientes.dll
