@@ -1,95 +1,35 @@
-﻿namespace CadrastoClientes
+﻿using System.Windows.Forms;
+
+namespace CadrastoClientes
 {
     public partial class Form1 : Form
     {
-        public static void main()
-        {
-            List<Cliente> listaCliente = new List<Cliente>();
-            listaCliente.Add(new Cliente
-            {
-                Id = 1,
-                Nome = "Neymar Junior",
-                telefone = "(11) 98765-4321",
-                Email = "neymar.jr@email.com",
-                NomeSocial = "Ney jr",
-                datadenascimento = "05/02/1992",
-                EnderecoCliente = new EnderecoCliente { logradouro = "endereco do neymar", Numero = "11", Complemento = "Apartamento", Bairro = "Centro", Municipio = "São Paulo", Estado = "SP", Cep = "01234-567" },
-                Tipo = TipoCliente.PF,
-                Etnia = EtniaCliente.branco,
-                generocliente = GeneroCliente.masculino,
-            });
-            listaCliente.Add(new Cliente
-            {
-                Id = 2,
-                Nome = "Yuri Alberto",
-                telefone = "(11) 98765-0124",
-                Email = "yurialberto@email.com",
-                NomeSocial = "alberto",
-                datadenascimento = "18/03/2001",
-                EnderecoCliente = new EnderecoCliente { logradouro = "endereco do yuri", Numero = "9", Complemento = "Apartamento", Bairro = "itaquera", Municipio = "São Paulo", Estado = "SP", Cep = "08965-567" },
-                Tipo = TipoCliente.PF,
-                Etnia = EtniaCliente.branco,
-                generocliente = GeneroCliente.masculino,
-            });
-            listaCliente.Add(new Cliente
-            {
-                Id = 3,
-                Nome = "Thais Ribeiro",
-                telefone = "(11) 91235-0124",
-                Email = "thaisribeiro@email.com",
-                NomeSocial = "ribeiro",
-                datadenascimento = "30/10/1990",
-                EnderecoCliente = new EnderecoCliente { logradouro = "jd santo amaro", Numero = "98", Complemento = "Casa", Bairro = "Cohab", Municipio = "São Paulo", Estado = "SP", Cep = "05456-567" },
-                Tipo = TipoCliente.PF,
-                Etnia = EtniaCliente.branco,
-                generocliente = GeneroCliente.feminino,
-            });
-
-
-        }
+        private readonly List<Cliente> Clientes = [];
+        private readonly BindingSource BindingSource = [];
+        
         public Form1()
         {
             InitializeComponent();
+           
+            EnderecoCliente endereconeymar = new EnderecoCliente { logradouro = "endereco do neymar", Numero = "11", Complemento = "Apartamento", Bairro = "Centro", Municipio = "São Paulo", Estado = "SP", Cep = "01234-567" };
+            Cliente neymar = new Cliente() { Id = 1, Nome = "Neymar Junior", datadenascimento = "05/02/1992", Etnia = EtniaCliente.outros, generocliente = GeneroCliente.masculino, Tipo = TipoCliente.PF, EnderecoCliente = endereconeymar };
+            Cliente.Add(neymar);
 
-        }
+            EnderecoCliente enderecoyuri = new EnderecoCliente { logradouro = "endereco do yuri", Numero = "9", Complemento = "Apartamento", Bairro = "Centro", Municipio = "São Paulo", Estado = "SP", Cep = "01456-567" };
+            Cliente yuri = new Cliente() { Id = 2, Nome = "Yuri Alberto", datadenascimento = "18/03/2001", Etnia = EtniaCliente.branco, generocliente = GeneroCliente.masculino, Tipo = TipoCliente.PF, EnderecoCliente = enderecoyuri };
+            Cliente.Add(yuri);
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
+            EnderecoCliente enderecothais = new EnderecoCliente { logradouro = "endereco da thais", Numero = "98", Complemento = "Casa", Bairro = "Centro", Municipio = "São Paulo", Estado = "SP", Cep = "07895-567" };
+            Cliente thais = new Cliente() { Id = 2, Nome = "Thais Ribeiro", datadenascimento = "28/02/1997", Etnia = EtniaCliente.branco, generocliente = GeneroCliente.feminino, Tipo = TipoCliente.PF, EnderecoCliente = enderecothais};
+            Cliente.Add(thais);
 
-        }
-
-        private void buttoncadastro_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Cliente listacliente = new Cliente();
-                (
-                   textboxID.Text,
-                   textboxName.Text,
-                   datadenascimento.Text,
-                   textboxtelefone.Text,
-                   textBoxemail.Text,
-                   textBoxnomesocial.Text,
-                   comboBoxGenero.Text,
-                   combobox01.Text,
-                   textBoxendereco.Text,
-                   textBoxlogradouro.Text,
-                   textBoxbairro.Text,
-                   textboxmunicipio.Text,
-                   textBoxEstado.Text,
-                   textboxnumero.Text,
-                   cheeckEstrangeiro.Checked,
-               );
-
-            }
-
-        }
+            BindingSource.DataSource = Clientes;
+            dataGridViewclientes.DataSource = BindingSource;
 
 
 
-        private void label9_Click(object sender, EventArgs e)
-        {
 
         }
     }
-}
+
+       

@@ -8,6 +8,8 @@ namespace CadrastoClientes
         preto, 
         pardo, 
         indigenas, 
-        amarelos 
+        amarelos, 
+        outros 
+
     }
 }

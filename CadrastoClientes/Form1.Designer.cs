@@ -60,6 +60,8 @@
             label13 = new Label();
             label14 = new Label();
             Labelresultado = new Label();
+            dataGridViewclientes = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewclientes).BeginInit();
             SuspendLayout();
             // 
             // textboxName
@@ -335,11 +337,24 @@
             Labelresultado.Size = new Size(0, 23);
             Labelresultado.TabIndex = 31;
             // 
+            // dataGridViewclientes
+            // 
+            dataGridViewclientes.AllowUserToAddRows = false;
+            dataGridViewclientes.AllowUserToDeleteRows = false;
+            dataGridViewclientes.AllowUserToOrderColumns = true;
+            dataGridViewclientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewclientes.Location = new Point(831, 12);
+            dataGridViewclientes.Name = "dataGridViewclientes";
+            dataGridViewclientes.ReadOnly = true;
+            dataGridViewclientes.Size = new Size(374, 472);
+            dataGridViewclientes.TabIndex = 32;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(888, 450);
+            ClientSize = new Size(1233, 496);
+            Controls.Add(dataGridViewclientes);
             Controls.Add(Labelresultado);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -374,6 +389,7 @@
             Controls.Add(textboxName);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewclientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -412,5 +428,6 @@
         private Label label13;
         private Label label14;
         private Label Labelresultado;
+        private DataGridView dataGridViewclientes;
     }
 }
