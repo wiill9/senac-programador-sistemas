@@ -135,7 +135,6 @@
             datadenascimento.Size = new Size(200, 23);
             datadenascimento.TabIndex = 8;
             datadenascimento.Value = new DateTime(2025, 3, 25, 23, 59, 59, 0);
-            datadenascimento.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // buttoncadastro
             // 
@@ -280,7 +279,6 @@
             label9.Size = new Size(18, 15);
             label9.TabIndex = 25;
             label9.Text = "ID";
-            label9.Click += label9_Click;
             // 
             // label10
             // 
@@ -346,14 +344,14 @@
             dataGridViewclientes.Location = new Point(831, 12);
             dataGridViewclientes.Name = "dataGridViewclientes";
             dataGridViewclientes.ReadOnly = true;
-            dataGridViewclientes.Size = new Size(374, 472);
+            dataGridViewclientes.Size = new Size(592, 585);
             dataGridViewclientes.TabIndex = 32;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1233, 496);
+            ClientSize = new Size(1435, 603);
             Controls.Add(dataGridViewclientes);
             Controls.Add(Labelresultado);
             Controls.Add(label14);
