@@ -94,26 +94,23 @@ namespace CadrastoClientes
 
         private void buttoncadastro_Click(object sender, EventArgs e)
         {
-            List<Cliente> Clientes = new List<Cliente>();
-            {
-           textboxName.Text,
-           datadenascimento.Text,
-           textboxtelefone.Text,
-           textBoxemail.Text,
-           textBoxnomesocial.Text,
-           comboBoxGenero.Text,
-           combobox01.Text,
-           textBoxendereco.Text,
-           textBoxlogradouro.Text,
-           textBoxbairro.Text,
-           textboxmunicipio.Text,
-           textBoxEstado.Text,
-           textboxnumero.Text,
-           cheeckEstrangeiro.Checked,
-       );
+        if (string.IsNullOrWhiteSpace(textboxName.Text) ||
+        string.IsNullOrWhiteSpace(datadenascimento.Text) ||
+        string.IsNullOrWhiteSpace(textboxtelefone.Text) ||
+        string.IsNullOrWhiteSpace(textBoxemail.Text) ||
+        string.IsNullOrWhiteSpace(textBoxnomesocial.Text) ||
+        comboBoxGenero.SelectedIndex == -1 ||
+        combobox01.SelectedIndex == -1 || 
+        string.IsNullOrWhiteSpace(textBoxlogradouro.Text) ||
+        string.IsNullOrWhiteSpace(textBoxbairro.Text) ||
+        string.IsNullOrWhiteSpace(textboxmunicipio.Text) ||
+        string.IsNullOrWhiteSpace(textBoxEstado.Text) ||
+        string.IsNullOrWhiteSpace(textboxnumero.Text))
+        {
+                Labelresultado.Text = "Cliente Cadrastado com Sucesso!";
+             
+
             }
-            
-       
         }
     }
 }
