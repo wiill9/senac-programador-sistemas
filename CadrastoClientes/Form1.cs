@@ -94,25 +94,36 @@ namespace CadrastoClientes
 
         private void buttoncadastro_Click(object sender, EventArgs e)
         {
-        if (string.IsNullOrWhiteSpace(textboxName.Text) ||
-        string.IsNullOrWhiteSpace(datadenascimento.Text) ||
-        string.IsNullOrWhiteSpace(textboxtelefone.Text) ||
-        string.IsNullOrWhiteSpace(textBoxemail.Text) ||
-        string.IsNullOrWhiteSpace(textBoxnomesocial.Text) ||
-        comboBoxGenero.SelectedIndex == -1 ||
-        combobox01.SelectedIndex == -1 || 
-        string.IsNullOrWhiteSpace(textBoxlogradouro.Text) ||
-        string.IsNullOrWhiteSpace(textBoxbairro.Text) ||
-        string.IsNullOrWhiteSpace(textboxmunicipio.Text) ||
-        string.IsNullOrWhiteSpace(textBoxEstado.Text) ||
-        string.IsNullOrWhiteSpace(textboxnumero.Text))
+            CampoNaoPreechido();
+            MessageBox.Show("Por favor, preencha todos os campos obrigatórios.");
+            return;
+        }
+
+
+        private void CampoNaoPreechido()
         {
-                Labelresultado.Text = "Cliente Cadrastado com Sucesso!";
-             
+            if (string.IsNullOrEmpty(textboxID.Text) ||
+            string.IsNullOrEmpty(textboxName.Text) ||
+            string.IsNullOrWhiteSpace(datadenascimento.Text) ||
+            string.IsNullOrWhiteSpace(textboxtelefone.Text) ||
+            string.IsNullOrWhiteSpace(textBoxendereco.Text) ||
+            string.IsNullOrWhiteSpace(textBoxemail.Text) ||
+            string.IsNullOrWhiteSpace(textBoxnomesocial.Text) ||
+            comboBoxGenero.SelectedIndex == -1 ||
+            combobox01.SelectedIndex == -1 ||
+            string.IsNullOrWhiteSpace(textBoxlogradouro.Text) ||
+            string.IsNullOrWhiteSpace(textboxcep.Text) ||
+            string.IsNullOrWhiteSpace(textBoxbairro.Text) ||
+            string.IsNullOrWhiteSpace(textboxmunicipio.Text) ||
+            string.IsNullOrWhiteSpace(textBoxEstado.Text) ||
+            string.IsNullOrWhiteSpace(textboxnumero.Text))
+
+            {
 
             }
+
         }
     }
-}
 
+}
 

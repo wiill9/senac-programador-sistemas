@@ -61,6 +61,8 @@
             label14 = new Label();
             Labelresultado = new Label();
             dataGridViewclientes = new DataGridView();
+            textboxcomplemento = new TextBox();
+            Complemento = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewclientes).BeginInit();
             SuspendLayout();
             // 
@@ -347,11 +349,29 @@
             dataGridViewclientes.Size = new Size(592, 585);
             dataGridViewclientes.TabIndex = 32;
             // 
+            // textboxcomplemento
+            // 
+            textboxcomplemento.Location = new Point(513, 384);
+            textboxcomplemento.Name = "textboxcomplemento";
+            textboxcomplemento.Size = new Size(230, 23);
+            textboxcomplemento.TabIndex = 33;
+            // 
+            // Complemento
+            // 
+            Complemento.AutoSize = true;
+            Complemento.Location = new Point(513, 366);
+            Complemento.Name = "Complemento";
+            Complemento.Size = new Size(84, 15);
+            Complemento.TabIndex = 34;
+            Complemento.Text = "Complemento";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1435, 603);
+            Controls.Add(Complemento);
+            Controls.Add(textboxcomplemento);
             Controls.Add(dataGridViewclientes);
             Controls.Add(Labelresultado);
             Controls.Add(label14);
@@ -427,5 +447,7 @@
         private Label label14;
         private Label Labelresultado;
         private DataGridView dataGridViewclientes;
+        private TextBox textboxcomplemento;
+        private Label Complemento;
     }
 }
