@@ -1,53 +1,107 @@
 use senac;
-drop table empregados;
-create table empregados (
-id INT primary KEY AUTO_INCREMENT, 
-nome VARCHAR (100) NOT NULL, 
-idade int null, 
-departamento varchar (100) not null,  
-salario decimal (10, 2) null 
+drop table cliente;
+create table cliente (
+id int primary key auto_increment,
+nome VARCHAR (100) not null,
+idade int null,
+cidade VARCHAR (100) not null, 
+saldo decimal (10, 2) null
 );
 
+insert into cliente (
+nome, idade, cidade, saldo) values 
+('Carlos', 45, 'Sao Paulo', 250000),
+('Mariana', 32, 'Rio de Janeiro', 320050), 
+('Pedro', 27, 'Belo Horizonte', 150075),
+('Fernanda', 38, 'Curitiba', 420000);
 
+select * from cliente
+where
+cidade = 'Rio de Janeiro';
 
-INSERT INTO empregados (
-nome, idade, departamento, salario ) values 
-('Joao', 30, 'RH', 50000),
-('Sarah', 28, 'TI', 60000),
-('Miguel', 35, 'Vendas', 60000), 
-('Ana', 27, 'TI', 62000);
+select * from cliente
+ORDER BY saldo >= 2000 desc;
 
-select * from empregados
- where 
- departamento = 'TI';
- 
- select * from empregados 
- where 
- salario >= 50000;
- 
- select * from empregados
- ORDER BY idade DESC;
- 
-select * from empregados 
+select * from cliente
+where
+idade >= 30;
+
+select * from cliente 
 where 
-idade >= 28 and idade <= 35;
+idade >= 25 and idade <= 40;
 
-select * from empregados 
+select * from cliente 
 where 
-nome like 'M%';
+nome like 'F%';
 
-select * from empregados 
-where 
-departamento != 'RH';
+select * from cliente 
+where
+cidade != 'Sao Paulo' and cidade != 'Curitiba';
 
-select departamento, count(*) from empregados group by departamento;
+use senac;
+drop table pedido;
+create table pedido (
+id int primary key auto_increment,
+cliente_id INT NOT NULL,
+valor decimal (10, 2) not null,
+data_pedido DATETIME NOT NULL,
+FOREIGN KEY (cliente_id) REFERENCES cliente (id)
+ );
+ insert into pedido (
+cliente_id, valor, data_pedido) values 
+ (1, 500.00, '2024-03-10'),
+ (2, 1200.00, '2024-03-12'),
+ (3, 300.50, '2024-03-15'),
+ (1, 800.00, '2024-03-18');
+ 
+ select * from pedido;
+
+select count(*) from pedido;
+
+select AVG(valor) from pedido;
+
+select cliente_id, sum(valor) from pedido group by cliente_id;
+
+select
+ p.id, c.nome, p.valor
+ from
+pedido p 
+INNER JOIN 
+cliente c on p.cliente_id = c.id;
+
+select 
+c.id, c.nome, p.valor
+from
+cliente c 
+LEFT JOIN  
+pedido p on c.id = p.cliente_id;
+
+select 
+c.id, c.nome, p.id as pedido, p.valor
+from 
+cliente c
+ Inner Join pedido p on c.id = p.cliente_id
+ where p.valor > ( select AVG(valor) from pedido);
+ 
+ select c. *
+ from
+ cliente c 
+ where c.id in(select p.cliente_id from pedido p where p.valor > 1000); 
+ 
+ insert into cliente (nome, cidade) 
+ values ('Rafael', 'Porto Alegre');
+ 
+ select * from cliente;
+ 
+ 
+
+
 
 
 
  
 
- 
- 
+
 
 
 
