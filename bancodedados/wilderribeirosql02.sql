@@ -83,7 +83,8 @@ FROM
     produto
 WHERE
     categoria = 'Eletronicos'
-ORDER BY preco > 3000 DESC; 
+        AND preco > 3000
+ORDER BY preco DESC;
 
 SELECT 
     *
@@ -97,14 +98,15 @@ WHERE
 FROM
     pedido
 WHERE
-    data_pedido >= '2024-03-10 00:00:00'
-        AND data_pedido <= '2024-03-15 23:59:59'; 
+    data_pedido BETWEEN '2024-03-10' AND '2024-03-15'
+ORDER BY data_pedido ASC;
 
 SELECT 
     *
 FROM
     produto
-ORDER BY estoque < 10 ASC;
+
+ORDER BY estoque < 10 asc;
 
 SELECT 
     *
@@ -202,7 +204,7 @@ WHERE
             
 UPDATE produto 
 SET 
-    preco = preco * 1.10
+    preco = preco * 1.1
 WHERE
     categoria = 'Eletronicos';
     SELECT 
