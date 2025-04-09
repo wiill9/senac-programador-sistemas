@@ -1,0 +1,16 @@
+C:\Users\wilder.rsantos\source\repos\usuario\bin\Debug\net8.0-windows\usuario.exe
+C:\Users\wilder.rsantos\source\repos\usuario\bin\Debug\net8.0-windows\usuario.deps.json
+C:\Users\wilder.rsantos\source\repos\usuario\bin\Debug\net8.0-windows\usuario.runtimeconfig.json
+C:\Users\wilder.rsantos\source\repos\usuario\bin\Debug\net8.0-windows\usuario.dll
+C:\Users\wilder.rsantos\source\repos\usuario\bin\Debug\net8.0-windows\usuario.pdb
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.Form1.resources
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.csproj.GenerateResource.cache
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.AssemblyInfoInputs.cache
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.AssemblyInfo.cs
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.csproj.CoreCompileInputs.cache
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.dll
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\refint\usuario.dll
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.pdb
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\usuario.genruntimeconfig.cache
+C:\Users\wilder.rsantos\source\repos\usuario\obj\Debug\net8.0-windows\ref\usuario.dll
