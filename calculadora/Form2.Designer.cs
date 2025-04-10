@@ -36,29 +36,28 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textboxvalor1 = new TextBox();
-            textboxvalor2 = new TextBox();
-            texboxvalor3 = new TextBox();
-            textresultado = new TextBox();
-            texboxvalor4 = new TextBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
             label5 = new Label();
-            textresul = new TextBox();
+            textBox6 = new TextBox();
             label6 = new Label();
             radioButton5 = new RadioButton();
-            buttoncalcular = new Button();
-            buttoncalculo = new Button();
+            button1 = new Button();
+            button2 = new Button();
             label7 = new Label();
             label8 = new Label();
-            valor7 = new TextBox();
-            texboxvalor5 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
             radioButton10 = new RadioButton();
-            buttoncall = new Button();
+            button3 = new Button();
             radioButton4 = new RadioButton();
             radioButton6 = new RadioButton();
             radioButton7 = new RadioButton();
             radioButton8 = new RadioButton();
             radioButton9 = new RadioButton();
-            labelresultado = new Label();
             SuspendLayout();
             // 
             // radioButton1
@@ -125,7 +124,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(1, 114);
+            label3.Location = new Point(1, 115);
             label3.Name = "label3";
             label3.Size = new Size(85, 15);
             label3.TabIndex = 3;
@@ -140,43 +139,40 @@
             label4.TabIndex = 4;
             label4.Text = "Resultado :";
             // 
-            // textboxvalor1
+            // textBox1
             // 
-            textboxvalor1.Location = new Point(92, 52);
-            textboxvalor1.Name = "textboxvalor1";
-            textboxvalor1.Size = new Size(100, 23);
-            textboxvalor1.TabIndex = 5;
-            textboxvalor1.TextChanged += textBox1_TextChanged;
+            textBox1.Location = new Point(92, 52);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 5;
             // 
-            // textboxvalor2
+            // textBox2
             // 
-            textboxvalor2.Location = new Point(92, 82);
-            textboxvalor2.Name = "textboxvalor2";
-            textboxvalor2.Size = new Size(100, 23);
-            textboxvalor2.TabIndex = 6;
-            textboxvalor2.TextChanged += textBox2_TextChanged;
+            textBox2.Location = new Point(92, 82);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 6;
             // 
-            // texboxvalor3
+            // textBox3
             // 
-            texboxvalor3.Location = new Point(92, 111);
-            texboxvalor3.Name = "texboxvalor3";
-            texboxvalor3.Size = new Size(100, 23);
-            texboxvalor3.TabIndex = 7;
+            textBox3.Location = new Point(92, 111);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 7;
             // 
-            // textresultado
+            // textBox4
             // 
-            textresultado.Location = new Point(92, 144);
-            textresultado.Name = "textresultado";
-            textresultado.Size = new Size(100, 23);
-            textresultado.TabIndex = 8;
-            textresultado.TextChanged += textBox4_TextChanged;
+            textBox4.Location = new Point(92, 144);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 8;
             // 
-            // texboxvalor4
+            // textBox5
             // 
-            texboxvalor4.Location = new Point(625, 49);
-            texboxvalor4.Name = "texboxvalor4";
-            texboxvalor4.Size = new Size(100, 23);
-            texboxvalor4.TabIndex = 13;
+            textBox5.Location = new Point(625, 49);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(100, 23);
+            textBox5.TabIndex = 13;
             // 
             // label5
             // 
@@ -187,12 +183,12 @@
             label5.TabIndex = 14;
             label5.Text = "Lado:";
             // 
-            // textresul
+            // textBox6
             // 
-            textresul.Location = new Point(625, 89);
-            textresul.Name = "textresul";
-            textresul.Size = new Size(100, 23);
-            textresul.TabIndex = 15;
+            textBox6.Location = new Point(625, 89);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 15;
             // 
             // label6
             // 
@@ -214,25 +210,23 @@
             radioButton5.Text = "Perimetro ";
             radioButton5.UseVisualStyleBackColor = true;
             // 
-            // buttoncalcular
+            // button1
             // 
-            buttoncalcular.Location = new Point(334, 70);
-            buttoncalcular.Name = "buttoncalcular";
-            buttoncalcular.Size = new Size(75, 23);
-            buttoncalcular.TabIndex = 12;
-            buttoncalcular.Text = "Calcular";
-            buttoncalcular.UseVisualStyleBackColor = true;
-            buttoncalcular.Click += button1_Click;
+            button1.Location = new Point(334, 70);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 12;
+            button1.Text = "Calcular";
+            button1.UseVisualStyleBackColor = true;
             // 
-            // buttoncalculo
+            // button2
             // 
-            buttoncalculo.Location = new Point(847, 69);
-            buttoncalculo.Name = "buttoncalculo";
-            buttoncalculo.Size = new Size(75, 23);
-            buttoncalculo.TabIndex = 19;
-            buttoncalculo.Text = "Calcular";
-            buttoncalculo.UseVisualStyleBackColor = true;
-            buttoncalculo.Click += button2_Click;
+            button2.Location = new Point(847, 69);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 19;
+            button2.Text = "Calcular";
+            button2.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -252,19 +246,19 @@
             label8.TabIndex = 22;
             label8.Text = "Raio:";
             // 
-            // valor7
+            // textBox7
             // 
-            valor7.Location = new Point(92, 272);
-            valor7.Name = "valor7";
-            valor7.Size = new Size(100, 23);
-            valor7.TabIndex = 23;
+            textBox7.Location = new Point(92, 272);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(100, 23);
+            textBox7.TabIndex = 23;
             // 
-            // texboxvalor5
+            // textBox8
             // 
-            texboxvalor5.Location = new Point(92, 234);
-            texboxvalor5.Name = "texboxvalor5";
-            texboxvalor5.Size = new Size(100, 23);
-            texboxvalor5.TabIndex = 24;
+            textBox8.Location = new Point(92, 234);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(100, 23);
+            textBox8.TabIndex = 24;
             // 
             // radioButton10
             // 
@@ -277,15 +271,14 @@
             radioButton10.Text = "Diametro";
             radioButton10.UseVisualStyleBackColor = true;
             // 
-            // buttoncall
+            // button3
             // 
-            buttoncall.Location = new Point(361, 257);
-            buttoncall.Name = "buttoncall";
-            buttoncall.Size = new Size(75, 23);
-            buttoncall.TabIndex = 29;
-            buttoncall.Text = "Calcular";
-            buttoncall.UseVisualStyleBackColor = true;
-            buttoncall.Click += button3_Click;
+            button3.Location = new Point(361, 257);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 29;
+            button3.Text = "Calcular";
+            button3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
@@ -342,46 +335,36 @@
             radioButton9.Text = "Volume ";
             radioButton9.UseVisualStyleBackColor = true;
             // 
-            // labelresultado
-            // 
-            labelresultado.AutoSize = true;
-            labelresultado.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelresultado.Location = new Point(551, 265);
-            labelresultado.Name = "labelresultado";
-            labelresultado.Size = new Size(0, 25);
-            labelresultado.TabIndex = 35;
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(930, 359);
-            Controls.Add(labelresultado);
             Controls.Add(radioButton9);
             Controls.Add(radioButton8);
             Controls.Add(radioButton7);
             Controls.Add(radioButton6);
             Controls.Add(radioButton4);
-            Controls.Add(buttoncall);
+            Controls.Add(button3);
             Controls.Add(radioButton10);
-            Controls.Add(texboxvalor5);
-            Controls.Add(valor7);
+            Controls.Add(textBox8);
+            Controls.Add(textBox7);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(buttoncalculo);
+            Controls.Add(button2);
             Controls.Add(radioButton5);
             Controls.Add(label6);
-            Controls.Add(textresul);
+            Controls.Add(textBox6);
             Controls.Add(label5);
-            Controls.Add(texboxvalor4);
-            Controls.Add(buttoncalcular);
+            Controls.Add(textBox5);
+            Controls.Add(button1);
             Controls.Add(radioButton3);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
-            Controls.Add(textresultado);
-            Controls.Add(texboxvalor3);
-            Controls.Add(textboxvalor2);
-            Controls.Add(textboxvalor1);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -389,7 +372,6 @@
             Controls.Add(comboBoxfiguras);
             Name = "Form2";
             Text = "Geometria ";
-            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -404,28 +386,27 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textboxvalor1;
-        private TextBox textboxvalor2;
-        private TextBox texboxvalor3;
-        private TextBox textresultado;
-        private TextBox texboxvalor4;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
         private Label label5;
-        private TextBox textresul;
+        private TextBox textBox6;
         private Label label6;
         private RadioButton radioButton5;
-        private Button buttoncalcular;
-        private Button buttoncalculo;
+        private Button button1;
+        private Button button2;
         private Label label7;
         private Label label8;
-        private TextBox valor7;
-        private TextBox texboxvalor5;
+        private TextBox textBox7;
+        private TextBox textBox8;
         private RadioButton radioButton10;
-        private Button buttoncall;
+        private Button button3;
         private RadioButton radioButton4;
         private RadioButton radioButton6;
         private RadioButton radioButton7;
         private RadioButton radioButton8;
         private RadioButton radioButton9;
-        private Label labelresultado;
     }
 }

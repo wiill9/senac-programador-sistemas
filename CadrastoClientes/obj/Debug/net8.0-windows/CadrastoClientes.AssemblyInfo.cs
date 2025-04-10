@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CadrastoClientes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+901cdff5b70138fabe2abded154ac73bb1088ed4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CadrastoClientes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CadrastoClientes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

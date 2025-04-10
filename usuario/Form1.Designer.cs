@@ -79,7 +79,7 @@
             // 
             // buttonCadrasto4
             // 
-            buttonCadrasto4.Location = new Point(542, 156);
+            buttonCadrasto4.Location = new Point(558, 147);
             buttonCadrasto4.Name = "buttonCadrasto4";
             buttonCadrasto4.Size = new Size(92, 23);
             buttonCadrasto4.TabIndex = 4;

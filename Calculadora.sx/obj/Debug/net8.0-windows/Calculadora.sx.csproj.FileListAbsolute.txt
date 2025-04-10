@@ -1,0 +1,6 @@
+C:\Users\wilder.rsantos\source\repos\Calculadora.sx\obj\Debug\net8.0-windows\Calculadora.sx.Form1.resources
+C:\Users\wilder.rsantos\source\repos\Calculadora.sx\obj\Debug\net8.0-windows\Calculadora.sx.csproj.GenerateResource.cache
+C:\Users\wilder.rsantos\source\repos\Calculadora.sx\obj\Debug\net8.0-windows\Calculadora.sx.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wilder.rsantos\source\repos\Calculadora.sx\obj\Debug\net8.0-windows\Calculadora.sx.AssemblyInfoInputs.cache
+C:\Users\wilder.rsantos\source\repos\Calculadora.sx\obj\Debug\net8.0-windows\Calculadora.sx.AssemblyInfo.cs
+C:\Users\wilder.rsantos\source\repos\Calculadora.sx\obj\Debug\net8.0-windows\Calculadora.sx.csproj.CoreCompileInputs.cache
