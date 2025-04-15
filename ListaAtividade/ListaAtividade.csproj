@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="bando de dados\" />
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
   </ItemGroup>
 
 </Project>
