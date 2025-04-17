@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ListaAtividade.repositorio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Policy;
@@ -14,33 +15,77 @@ namespace ListaAtividade.atividade
         public Situacao Situacao { get; set; }
 
 
-        public void Criar ()
+        private readonly AtividadeRepositorio repositorio = new();
+        public bool Criar ()
         {
+            if (!ValidarTitulo())
+            {
+                return false;
 
+            }
+
+            repositorio.Criar(Titulo);
+            return true;
         }
 
-        public void AtualizarSituacao()
+        public bool AtualizarSituacao()
         {
+            if (!Validarid())
+            {
 
+                return false;
+            }
+            if (!ValidarSituacao())
+            {
+                return false;
+            }
+            Atividade atividadeEmAndamento = BuscarAtividadeEmAndamento();
+            Situacao novaSituacao = BuscarProximaSituacao();
+
+            if (atividadeEmAndamento.id > 0 && atividadeEmAndamento.Situacao == novaSituacao)
+            {
+                return false;
+            }
+            repositorio.AtualizarSituacao(id, (int)novaSituacao); ;
+            return true;
         }
+            
 
-        public Atividade BuscarAtividadeEmaAndamento()
+        public Atividade BuscarAtividadeEmAndamento()
         {
-            return new Atividade();
+            return repositorio.BuscarAtividadeEmAndamento();
         }
         public List <Atividade> ListarAtividadesPendentes()
         {
-            return [];
+            return repositorio.ListarAtividadesPendesntes();
+        }
+        private bool Validarid()
+        {
+            return id > 0;
         }
 
         private bool ValidarTitulo()
         {
-            return string.IsNullOrWhiteSpace(Titulo);
+            return !string.IsNullOrWhiteSpace(Titulo);
+        }
+        private bool ValidarSituacao()
+        {
+            return Situacao != Situacao.Concluido;
         }
 
-        private Situacao BuscarProximaSituacao()
+        private Situacao BuscarProximaSituacao() 
         {
+            /*if (Situacao == Situacao.Pendente)
+            {
+                return Situacao.Realizando;
+            }
+
             return Situacao.Concluido;
+            */
+            return Situacao == Situacao.Pendente ? Situacao.Realizando : Situacao.Concluido;
+            
+
+
         }
 
     }
